@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CDN de font-awesome -->
+  <!-- CDN son las siglas para Content Delivery Network (Red de Distribución de Contenidos) y, tal como su nombre lo indica, se trata de una red de servidores encargada de distribuir contenidos en Internet de manera más rápida y eficiente gracias a una serie de POPs (Puntos de Presencia) situados alrededor del mundo. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Mi portafolio</title>
+  <script src=""></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">J<span>V</span></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <!--<li><a href="#about">Acerca de mi</a></li>
+              <!--<li><a href="#panel">Panel</a></li>-->
+              <!--<li><a href="#lista">Lista</a></li>-->
+              <!-- <li><a href="#testimonials">Testimonio</a></li> -->
+              <!-- <li><a href="#contact">Contacto</a></li> -->
+              <li><a href="https://wa.me/+573003205347" target="_blank" class="active">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Juan<span>Valencia</span></h1>
+              <p class="text">
+                ¡Hola! Soy Juan Camilo Valencia Martinez, Ingeniero Mecatrónico y
+                Tecnólogo en Electrónica de la Universidad de Caldas, con enfoque en el desarrollo
+                de software. Me caracterizo por mi capacidad de análisis y resolución de problemas,
+                integrando conocimientos de distintas áreas para construir soluciones eficientes.
+                Con enfoque en desarrollo backend y creación de sistemas escalables, aplicando
+                principios de Clean Code para garantizar código mantenible, legible y de calidad.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">Java</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">Spring Boot</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">APIs REST</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">PostgreSQL</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">Git / GitHub</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">Postman</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="https://drive.google.com/file/d/15TJI0TMuJsEkHheCy12BE-es99WnPocG/view?usp=drive_link"
+                target="_blank">
+                <button class="btn">Descargar CV</button>
+              </a>
+            </div>
+            <div class="column-2 image">
+              <img src="./img/shapes/points2.svg" class="points" alt="" />
+              <img src="./img/camilo.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Sección de servicios -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h3 class="title">Servicios</h3>
+        <p class="text">Backend Developer con formación en Ingeniería Mecatrónica y Tecnología
+          en Electrónica. Especializado en Java y Spring Boot, con experiencia en desarrollo de
+          APIs REST, integración con PostgreSQL y diseño de soluciones basadas en arquitectura
+          en capas. Interesado en construir software escalable y de alto rendimiento.</p>
+      </div>
+      <div class="cards">
+        <div class="card-wrap">
+          <div class="card" data-card="UI/UX">
+            <div class="card-content z-index">
+              <img src="./img/java-icon.svg" class="icon" alt="Java Icon" />
+              <h3 class="title-sm">Desarrollo Backend</h3>
+              <p class="text">
+                Desarrollo de aplicaciones backend utilizando Java y Spring Boot, enfocadas en la creación
+                de sistemas robustos, escalables y mantenibles. Implemento arquitecturas limpias y buenas
+                prácticas para garantizar un código de alta calidad y fácil evolución.
+              </p>
+              <a href="#" class="btn small">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <div class="card" data-card="Code">
+            <div class="card-content z-index">
+              <img src="./img/API-icon.svg" class="icon" alt="" />
+              <h3 class="title-sm">Desarrollo de APIs REST</h3>
+              <p class="text">
+                Diseño y construcción de APIs REST seguras y eficientes para la comunicación entre
+                sistemas. Manejo de estructuras JSON, validaciones y control de errores para asegurar
+                un flujo de datos confiable y organizado.
+              </p>
+              <a href="#" class="btn small">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <div class="card" data-card="App">
+            <div class="card-content z-index">
+              <img src="./img/database-icon.svg" class="icon" alt="" />
+              <h3 class="title-sm">Gestión de Bases de Datos</h3>
+              <p class="text">
+                Integración y manejo de bases de datos relacionales como PostgreSQL, optimizando
+                consultas y garantizando la integridad y disponibilidad de la información en
+                aplicaciones backend.
+              </p>
+              <a href="#" class="btn small">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Sección de proyectos -->
+    <section class="portfolio section" id="portfolio">
+      <div class="background-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Mis proyectos">Pepositorios</h3>
+        </div>
+        <div class="section-body">
+          <div class="filter button-group">
+            <a href="https://github.com/Jcvalencia05?tab=repositories" target="_blank" class="filter-btn active"
+              data-filter=""="">Ver GitHub</a>
+            <a href="https://poke-lista.web.app/" target="_blank" class="filter-btn active" data-filter=""="">API
+              Pokemon</a>
+            <a href="https://github.com/Jcvalencia05/ecommerceSecurityGroupBack/" target="_blank"
+              class="filter-btn active" data-filter=""="">ecommerceSecurityGroupBackend</a>
+            <a href="https://github.com/Jcvalencia05/ecommerceSecurityGroupFront" target="_blank"
+              class="filter-btn active" data-filter=""="">ecommerceSecurityGroupFrontend</a>
+
+            <button class="filter-btn" data-filter=".logo-design">
+              <!--Diseño-->
+            </button>
+          </div>
+          <div class="grid">
+            <div class="grid-item logo-design">
+              <div class="gallery-image">
+                <img src="./img/portfolio/pokebola.png" alt="API Pokemon" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>API Pokemon</h3>
+                    <a href="https://poke-lista.web.app/" target="_blank" class="btn small">Ver más</a>
+                    <!--<h5>API Pokemon</h5><-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item webdev">
+              <div class="gallery-image">
+                <img src="./img/portfolio/shop.jpg" al />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>ecommerceSecurityGroupBack</h3>
+                    <a href="https://github.com/Jcvalencia05/ecommerceSecurityGroupBack" target="_blank"
+                      class="btn small">Ver más</a>
+                    <!--<h5>Ver demo</h5>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui">
+              <div class="gallery-image">
+                <img src="./img/portfolio/shop.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>ecommerceSecurityGroupFront</h3>
+                    <a href="https://github.com/Jcvalencia05/ecommerceSecurityGroupFront" target="_blank"
+                      class="btn small">Ver más</a>
+                    <!--<h5>Ver demo</h5>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-folio">
+            <a href="#" class="btn">Mas proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección acerca de -->
+    <section class="about section">
+    </section>
+    <!-- Sección pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <!--<div class="grid-4-col footer-about">
+                <h3 class="title-sm">Acerca de</h3>
+                <p class="text">
+                  Backend Developer con formación en Ingeniería Mecatrónica y Tecnología en Electrónica. 
+                  Especializado en Java y Spring Boot, con experiencia en desarrollo de APIs REST, 
+                  integración con PostgreSQL y diseño de soluciones basadas en arquitectura en capas. 
+                  Interesado en construir software escalable y de alto rendimiento.
+                </p>
+              </div>-->
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Servicios</a>
+              </li>
+              <li>
+                <a href="#portfolio">Repositorios</a>
+              </li>
+              <li>
+                <a href="#about">Acerca de</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Servicios</h3>
+            <ul>
+              <li>
+                <a href="#services">Desarrollo Backend</a>
+              </li>
+              <li>
+                <a href="#services">Desarrollo de APIs REST</a>
+              </li>
+              <li>
+                <a href="#services">Gestión de Bases de Datos</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="grid-4-col footer-links"></div>
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Sígueme</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://github.com/Jcvalencia05">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-camilo-valencia-martinez-b14989288">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="back-btn-wrap">
+                <a href="#" class="back-btn">
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="copyright">
+          <p class="text">
+            Copyright&copy;2026 | Hecho por
+            <a href="#" class="split-text"> Juan Camilo Valencia Martinez </a>
+          </p>
+        </div>
+
+      </div>
+      </div>
+    </footer>
+</body>
+
+</html>
