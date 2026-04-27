@@ -122,7 +122,29 @@ límites del contenedor */
 .section {
   padding: 7rem 0;
   overflow: hidden;
-  height: 140vh;
+  height: auto;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Estilos normales (desktop) */
+.links ul {
+  display: flex;
+  gap: 20px;
+}
+.links.active {
+    transform: translateX(0);
+}
+/* ================= HEADER BASE ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .section-header {
@@ -247,6 +269,8 @@ nav .container {
 
 .links ul {
   display: flex;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
 .links a {
@@ -278,8 +302,8 @@ nav .container {
   background-color: var(--secondary-color);
 }
 
-.hamburger-menu {
-  display: none;
+.menu-toggle {
+    display: none;
 }
 
 .header-content .container.grid-2 {
